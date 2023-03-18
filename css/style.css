@@ -98,6 +98,17 @@ body {
 .form .link a:hover{
     text-decoration: underline;
 }
+/* User Area css */
+.users{
+    padding: 25px 30px;
+}
+
+.users header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* chat Area css */
 .chat-area header{
     background-color: rgb(255, 255, 255);
