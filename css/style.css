@@ -178,7 +178,7 @@ body {
     max-height: 350px;
     overflow-y: auto;
 }
-.users-list::-webkit-scrollbar{
+:is(.users-list, .chat-box)::-webkit-scrollbar{
     width: 0px;
 }
 .users-list a{
