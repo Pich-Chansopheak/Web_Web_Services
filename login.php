@@ -27,7 +27,7 @@
                     <input type="submit" value ="Login"> 
                 </div>
             </form>
-            <div class="link">Not yet singed up? <a href="#">Signup now</a></div>
+            <div class="link">Not yet singed up? <a href="index.php">Signup now</a></div>
         </section>
     </div>
 

@@ -37,7 +37,7 @@ body {
 .form form{
     margin: 20px 0;
 }
-.form form .error-text{
+.form form .error-txt{
     color: #721c24;
     background: #f8d7da;
     padding: 8px 10px;
@@ -45,6 +45,8 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #f5c6cb;
+    position: relative;
+    display: none;
 }
 .form form .name-details{
    display: flex;
