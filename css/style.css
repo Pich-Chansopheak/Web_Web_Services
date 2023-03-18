@@ -14,6 +14,10 @@ body {
     box-shadow: 0 0 128px  rgba(0,0,0,0.1),
                 0 32px 64px -48px rgba(0,0,0,0.5);
 }
+.wrapper img{
+    object-fit: cover;
+    border-radius:50% ;
+}
 /* Sign Up Form css */
 .form{
     padding: 25px 30px;
@@ -107,6 +111,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+.users header .content{
+    display: flex;
+}
+.users header .details{
+    margin-left: 15px;
+}
+.users header .details span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.users header .logout{
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+.users .search{
+    margin: 20px 0;
+    display: flex;
 }
 
 /* chat Area css */
