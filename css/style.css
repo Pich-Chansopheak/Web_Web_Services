@@ -76,3 +76,15 @@ body {
    border-radius: 5px;
    cursor: pointer;
 }
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a{
+    color: #333;
+    text-decoration: none;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
