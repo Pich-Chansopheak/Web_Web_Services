@@ -9,6 +9,7 @@ body {
 .wrapper{
     background: #fff;
     width: 450px;
+    overflow: hidden;
     border-radius: 16px;
     box-shadow: 0 0 128px  rgba(0,0,0,0.1),
                 0 32px 64px -48px rgba(0,0,0,0.5);
@@ -96,4 +97,93 @@ body {
 }
 .form .link a:hover{
     text-decoration: underline;
+}
+/* chat Area css */
+.chat-area header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+}
+.chat-area header img{
+    width: 45px;
+    height: 45px;
+    margin: 0px 10px 15px 0px;
+}
+.chat-area header i{
+    margin: 0px 10px 20px 0px;
+    color: black;
+    font-size: 17px;
+}
+.chat-area header span{
+    font-weight: bold;
+    font-size: 17px;
+}
+.chat-area header p{
+    font-size: 13px;
+}
+.chat-box{
+    background-color: rgb(243, 243, 243);
+    height: 480px;
+    padding: 25px 10px 20px 25px;
+    overflow-y: auto;
+}
+.chat-box .chat{
+    margin: -5px 0;
+}
+.chat-box .chat p{
+    padding: 8px 15px;
+}
+.chat-box .outgoing{
+    display: flex;
+}
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 120px );
+}
+.outgoing .details p{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 15px 15px 0px 15px;
+}
+.chat-box .incoming{
+    display: flex;
+    align-items: last baseline;
+}
+.chat-box .incoming img{
+    width: 35px;
+    height: 35px;
+}
+.incoming .details{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 120px);
+}
+.incoming .details p{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 15px 15px 15px 0px;
+}
+
+.chat-area .typing{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.typing input{
+    height: 45px;
+    width: calc(100% - 50px);
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.typing button{
+    width: 50px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
 }
