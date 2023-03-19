@@ -240,10 +240,10 @@ body {
 .chat-area header img{
     width: 45px;
     height: 45px;
-    margin: 0px 10px 15px 0px;
+    margin: 15px 10px 15px 0px;
 }
 .chat-area header i{
-    margin: 0px 10px 20px 0px;
+    margin: 20px 10px 20px 0px;
     color: black;
     font-size: 17px;
 }
@@ -261,7 +261,7 @@ body {
     overflow-y: auto;
 }
 .chat-box .chat{
-    padding: 12px 0;
+    padding: 5px 0;
 }
 .chat-box .chat p{
     padding: 8px 15px;
