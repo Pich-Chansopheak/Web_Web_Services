@@ -136,8 +136,10 @@ body {
     margin-left: 15px;
 }
 :is(.users,.users-list) span{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+}
+:is(.users,.users-list) p{
+    font-size: 17.5px;
 }
 .users header .logout{
     background: #333;
@@ -247,10 +249,10 @@ body {
 }
 .chat-area header span{
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
 }
 .chat-area header p{
-    font-size: 13px;
+    font-size: 17.5px;
 }
 .chat-box{
     background-color: rgb(243, 243, 243);
@@ -275,6 +277,7 @@ body {
     background-color: black;
     color: rgb(255, 255, 255);
     border-radius: 15px 15px 0px 15px;
+    font-size: 19px;
 }
 .chat-box .incoming{
     display: flex;
@@ -283,7 +286,7 @@ body {
 .chat-box .incoming img{
     width: 35px;
     height: 35px;
-   
+    margin-bottom: 2px;
 }
 .incoming .details{
     margin-left: 10px;
@@ -294,6 +297,7 @@ body {
     background-color: rgb(255, 255, 255);
     color: black;
     border-radius: 15px 15px 15px 0px;
+    font-size: 19px;
 }
 
 .chat-area .typing{
