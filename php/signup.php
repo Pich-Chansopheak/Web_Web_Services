@@ -1,6 +1,7 @@
 <?php
     session_start();
     include_once "config.php";
+    // Escape special characters 
     $fname = mysqli_real_escape_string($conn, $_POST['fname']);
     $lname = mysqli_real_escape_string($conn, $_POST['lname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -9,7 +10,7 @@
     if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)){
         // check email and password is valid or not
             // is email is valid
-        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)){  //filter validates an e-mail address.
             // check that email is already exist in the db or not
             $sql = mysqli_query($conn, "SELECT email FROM users WHERE email = '{$email}'");
             if(mysqli_num_rows($sql) > 0){  //if email already exist 
@@ -42,7 +43,7 @@
                             if($sql2){  //if these data inserted
                                 $sql3 = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
                                 if(mysqli_num_rows($sql3) > 0){
-                                    $row = mysqli_fetch_assoc($sql3);
+                                    $row = mysqli_fetch_assoc($sql3);  // fetches a result row as an associative array from sql3.
                                     $_SESSION['unique_id'] = $row['unique_id'] ; //using this session we need user unique_id in other php file
                                     echo "success";
                                 }
