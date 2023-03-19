@@ -24,7 +24,7 @@
                         <p><?php echo $row['status'] ?></p>
                     </div>
                 </div>
-                <a href="#" class="logout">Logout</a>
+                <a href="php/logout.php?logout_id=<?php echo $row['unique_id'] ?>" class="logout">Logout</a>
             </header>
             <div class="search">
                 <span class="text">Select a friend to start chating</span>
@@ -32,16 +32,7 @@
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
-                <!-- <a href="#">
-                    <div class="content">
-                        <img src="img/2.jpg" alt="">
-                        <div class="details">
-                            <span>Pich Chansopheak</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a> -->      
+    
             </div>
         </section>
     </div>
