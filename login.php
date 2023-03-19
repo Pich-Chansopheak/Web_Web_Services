@@ -12,7 +12,7 @@
         <section class="form login">
             <header>Hang Out Chat Application</header>
             <form action="#">
-                <div class="error-text">This is an error message!</div>
+                <div class="error-txt">This is an error message!</div>
                
                 <div class="field input">
                     <label>Email Address</label>
