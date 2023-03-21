@@ -7,9 +7,8 @@
    if(!empty($email) && !empty($password)){
       //let's check users entered email and password matched to database ant table row email and password
       $sql = mysqli_query($conn, "SELECT * FROM users WHERE email='{$email}' AND password = '{$password}'");
-      // $result = mysqli_query($conn,$sql);
+      
       if(mysqli_num_rows($sql) > 0){//if match
-         // $row = mysqli_fetch_assoc($result);
 
          $row = mysqli_fetch_assoc($sql);
          $status = "Active now";
