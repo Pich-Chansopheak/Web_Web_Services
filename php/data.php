@@ -6,15 +6,16 @@
                 OR outgoing_msg_id = {$outgoing_id}) ORDER BY msg_id DESC LIMIT 1";
         $qurey2 = mysqli_query($conn,$sql2);
         $row2 =mysqli_fetch_array($qurey2);
+        $you ="";
         if(mysqli_num_rows($qurey2) > 0){
             $result2 = $row2['msg'];
+            // adding you: text before msg if you are the one who send the message
+            ($outgoing_id == $row2['outgoing_msg_id']) ? $you ="You: " : $you="";
         }else{
             $result2 = "No message available";
         }
         // trimming msg if the word than 28 charater
         (strlen($result2) > 28) ? $msg =substr($result2,0,28).'...' : $msg = $result2;
-        // adding you: text before msg if you are the one who send the message
-        ($outgoing_id == $row2['outgoing_msg_id']) ? $you ="You: " : $you="";
         //check user status is online or not
         ($row['status'] == "Offline now") ? $offline = "offline": $offline="";
         $output .= '
